@@ -1,0 +1,86 @@
+.biu-container {
+  font-family: sans-serif;
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 18px;
+}
+
+.biu-label {
+  font-size: 1rem;
+  line-height: 2;
+  font-weight: 500;
+  display: block;
+}
+
+.biu-label input[type="file"] {
+  display: block;
+  margin-top: 4px;
+}
+
+.biu-thumb-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  justify-content: flex-start;
+  margin-top: 22px;
+  padding: 12px 0;
+  min-height: 152px;
+  border: 1px solid #ececf2;
+  border-radius: 12px;
+  background: #fcfcfe;
+}
+.biu-thumb-outer {
+  position: relative;
+  width: 112px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.biu-thumb-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 13px;
+  box-shadow: 0 2px 10px #e3e3e9;
+  opacity: 0;
+  transform: scale(1.04);
+  transition: opacity 0.9s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: opacity, transform;
+}
+.biu-thumb-visible {
+  opacity: 1;
+  transform: scale(1);
+}
+.biu-thumb-label {
+  font-size: 0.82rem;
+  color: #444;
+  margin-top: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.biu-tag-overlay {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  pointer-events: none;
+  user-select: none;
+}
+
+.biu-tag-select {
+  margin-top: 6px;
+  width: 100%;
+  font-size: 14px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  max-width: 240px;
+  cursor: pointer;
+}
